@@ -1,0 +1,6 @@
+streamlit 
+folium
+folium_static
+pandas
+os
+plotly.graph_objects
