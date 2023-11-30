@@ -214,7 +214,7 @@ if selected_well == "AEK201":
     plot_multitraces(AEK201)
 
     st.header('Error')
-    st.write("**Root Mean Square Error (RMSE) and Mean Average Error (MAE) for each model.**")
+    st.write("**Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) for each model.**")
 
     fig = px.bar(AEK201_scores, x='Model', y=['RMSE', 'MAE'], barmode='group', labels={'value': 'Metric Value'})
     fig.update_layout(xaxis={'categoryorder':'total descending'},
@@ -260,7 +260,7 @@ if selected_well == "AFL259":
     plot_multitraces(AFL259)
 
     st.header('Error')
-    st.write("**Root Mean Square Error (RMSE) and Mean Average Error (MAE) for each model.**")
+    st.write("**Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) for each model.**")
 
     fig = px.bar(AFL259_scores, x='Model', y=['RMSE', 'MAE'], barmode='group', labels={'value': 'Metric Value'})
     fig.update_layout(xaxis={'categoryorder':'total descending'},
@@ -309,7 +309,7 @@ if selected_well == "APK309":
     plot_multitraces(APK309)
 
     st.header('Error')
-    st.write("**Root Mean Square Error (RMSE) and Mean Average Error (MAE) for each model.**")
+    st.write("**Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) for each model.**")
 
     fig = px.bar(APK309_scores, x='Model', y=['RMSE', 'MAE'], barmode='group', labels={'value': 'Metric Value'})
     fig.update_layout(xaxis={'categoryorder':'total descending'},
@@ -357,7 +357,7 @@ if selected_well == "APK310":
     plot_multitraces(APK310)
 
     st.header('Error')
-    st.write("**Root Mean Square Error (RMSE) and Mean Average Error (MAE) for each model.**")
+    st.write("**Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) for each model.**")
 
     fig = px.bar(APK310_scores, x='Model', y=['RMSE', 'MAE'], barmode='group', labels={'value': 'Metric Value'})
     fig.update_layout(xaxis={'categoryorder':'total descending'},
@@ -366,8 +366,6 @@ if selected_well == "APK310":
     
     st.subheader('Raw Error')
     st.table(APK310_scores)
-
-### Baseline Model
 
 
 
